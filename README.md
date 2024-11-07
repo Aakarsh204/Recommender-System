@@ -8,6 +8,7 @@ A hybrid recommendation system that combines content-based and collaborative fil
 - Extensive data preprocessing and cleaning
 - Detailed exploratory data analysis (EDA)
 - Performance evaluation metrics
+- Interactive Dashboard with streamlit to generate recommendations based on user-id
 
 # Dataset
 The system uses an Amazon Sales Dataset with the following key features:
@@ -31,6 +32,8 @@ scikit-learn
 nltk
 textblob
 surprise
+streamlit
+plotly
 ```
 
 ## Data Preprocessing
