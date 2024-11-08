@@ -21,6 +21,7 @@ After they have finished installation, download the Collaborative Filter Model a
 [Link to CF Model](https://drive.google.com/file/d/1HbEL57Lw5DL3Ug-gckgjqvllQutZZSWP/view?usp=drive_link)
 
 Extract the models to the main working directory
+
 Also extract the python scripts to the main working directory
 ### Step 4
 Download the dataset from this [link](https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset)
@@ -49,7 +50,7 @@ conda activate Recommender-System
 ```
 Now inside the environment, run this command
 ```bash
-streamlit run app.p
+streamlit run app.py
 ```
 This should start up the streamlit app in your local browser.
 Happy Shopping!
