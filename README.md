@@ -3,7 +3,7 @@ A hybrid recommendation system that combines content-based and collaborative fil
 
 # Usage
 ### Step 1
-You can clone this repository locally using or download it as a zip file.
+You can clone this repository locally using CLI or download it as a zip file.
 ```bash
 git clone https://github.com/Aakarsh204/Recommender-System.git
 ```
