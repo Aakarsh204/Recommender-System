@@ -83,7 +83,6 @@ seaborn
 scipy
 scikit-learn
 nltk
-textblob
 surprise
 streamlit
 plotly
@@ -100,13 +99,13 @@ plotly
 ## Recommendation Approaches
 
 ### Content-Based Filtering
-- Uses TF-IDF vectorization for product details
-- Computes cosine similarity between products
-- Recommends products based on item-item similarity
+- Used TF-IDF vectorization for product details
+- Computed cosine similarity between products
+- Recommended products based on item-item similarity
 
 ### Collaborative Filtering
-- Implements SVD (Singular Value Decomposition)
-- Uses the Surprise library for model training
+- Implemented SVD (Singular Value Decomposition)
+- Used the Surprise library for model training
 - Cross-validation for model evaluation
 
 ### Hybrid System
@@ -118,3 +117,9 @@ plotly
 - RMSE (Root Mean Square Error)
 - MAE (Mean Absolute Error)
 - Average Precision Score
+
+# Challenges
+- The dataset had a unique format, where each product had comma separated user values
+- Splitting the user values often led to many predictions being the same item, but from different users
+- Going from experimenting in Colab to modularizing the code
+- Debugging the errors in the streamlit dashboard
