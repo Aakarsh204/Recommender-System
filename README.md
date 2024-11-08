@@ -123,3 +123,9 @@ plotly
 - Splitting the user values often led to many predictions being the same item, but from different users
 - Going from experimenting in Colab to modularizing the code
 - Debugging the errors in the streamlit dashboard
+
+# Screenshots
+![Alt text](Screenshots/Dashboard.png)
+![Alt text](Screenshots/Recs.png)
+![Alt text](Screenshots/Slider.png)
+![Alt text](Screenshots/Analytics.png)
