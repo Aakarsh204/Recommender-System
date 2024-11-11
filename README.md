@@ -23,25 +23,36 @@ You can clone this repository locally using CLI or download it as a zip file.
 git clone https://github.com/Aakarsh204/Recommender-System.git
 ```
 ### Step 2
-To run the Streamlit App Dashboard, you need to create an Anaconda environment
+Now, you need to create an Anaconda environment:
+- First, ensure you have Anaconda downloaded and setup on your computer.
+- Next, open Anaconda prompt, and navigate to the folder `Recommender-System`.
+- Create an Anaconda environment using the command below.
 ```bash
-conda create --name Recommender-System --file requirements.txt
+conda create --name Recommender-System
 ```
-This will install all the dependencies that you require to get started.
+This will create an environment with name Recommender-System.
 ### Step 3
-After they have finished installation, download the Collaborative Filter Model and Content Based Similarity Matrix from my GDrive
+Activate the environment for further commands
+```bash
+conda activate Recommender-System
+```
+Now setup the dependencies for the project
+```bash
+conda env update --file environment.yml
+```
+This should install and setup all the dependencies.
+
+### Step 4
+After they have finished installation, download the Collaborative Filter Model and Content Based Similarity Matrix from the links below
 
 [Link to Cosine Matrix](https://drive.google.com/file/d/1p0amjkWk1sLZMDGaWbb-e4X8jxUZIFjL/view?usp=drive_link)
 
 [Link to CF Model](https://drive.google.com/file/d/1HbEL57Lw5DL3Ug-gckgjqvllQutZZSWP/view?usp=drive_link)
 
-Extract the models to the main working directory
+Extract the models to the main working directory.
 
-Also extract the python scripts to the main working directory
-### Step 4
-Download the dataset from this [link](https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset)
+So far, your working directory should look like this:
 
-Extract this to the main working directory as well. So far your workspace should look like this:
 ```
 Recommender-System
  |
@@ -51,19 +62,16 @@ Recommender-System
  |    
  +-- amazon.csv
  |    
- +-- requirements.txt
+ +-- environment.yml
  |    
  +-- app.py
  |
- .... Rest of your scripts
-                  
+ +-- recommender_model.py
+ |
+ +-- preprocess.py         
 ```
 ### Step 5
-Once you are done setting up, activate your conda environment
-```bash
-conda activate Recommender-System
-```
-Now inside the environment, run this command
+Now inside the conda environment, run this command
 ```bash
 streamlit run app.py
 ```
@@ -74,6 +82,7 @@ Happy Shopping!
 
 ## Dependencies
 ```python
+python
 pandas
 numpy
 matplotlib
@@ -84,6 +93,7 @@ nltk
 surprise
 streamlit
 plotly
+conda
 ```
 
 ## Data Preprocessing
@@ -117,10 +127,10 @@ plotly
 - Average Precision Score
 
 # Challenges
-- The dataset had a unique format, where each product had comma separated user values
-- Splitting the user values often led to many predictions being the same item, but from different users
-- Going from experimenting in Colab to modularizing the code
-- Debugging the errors in the streamlit dashboard
+- The dataset had a unique format, where each product had comma separated user values.
+- Splitting the user values often led to many predictions being the same item, but from different users.
+- Going from experimenting in Colab to modularizing the code.
+- Debugging the errors in the streamlit dashboard.
 
 # Screenshots
 ![Alt text](Screenshots/Dashboard.png)
