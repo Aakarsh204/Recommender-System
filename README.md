@@ -127,3 +127,8 @@ plotly
 ![Alt text](Screenshots/Recs.png)
 ![Alt text](Screenshots/Slider.png)
 ![Alt text](Screenshots/Analytics.png)
+
+# Author
+Aakarsh Pathak<br />
+I’m a passionate developer focused on building and sharing machine learning and data science projects to advance my knowledge and real-world applications.<br />
+My linkedIn: [link](https://www.linkedin.com/in/aakarsh204/)
